@@ -1,0 +1,66 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://ce5bq774m54ml"]
+
+[ext_resource type="FontFile" uid="uid://dt4t78t20m8em" path="res://Assets/Fonts/plumppixel.ttf" id="2_126bg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_upiqw"]
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(5, 7, 5, 7)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aar2u"]
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(4, 0, 5, 7)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e8ixl"]
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(0, 6, 5, 7)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1jbld"]
+texture_margin_left = 2.0
+texture_margin_top = 3.0
+texture_margin_right = 2.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 0, 5, 7)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hc0u1"]
+texture_margin_left = 13.0
+texture_margin_top = 13.0
+texture_margin_right = 13.0
+texture_margin_bottom = 14.0
+region_rect = Rect2(0, 14, 27, 28)
+
+[resource]
+default_font = ExtResource("2_126bg")
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("2_126bg")
+Button/styles/disabled = SubResource("StyleBoxTexture_upiqw")
+Button/styles/focus = SubResource("StyleBoxTexture_aar2u")
+Button/styles/hover = SubResource("StyleBoxTexture_aar2u")
+Button/styles/normal = SubResource("StyleBoxTexture_e8ixl")
+Button/styles/pressed = SubResource("StyleBoxTexture_1jbld")
+Panel/styles/panel = SubResource("StyleBoxTexture_hc0u1")
