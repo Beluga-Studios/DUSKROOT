@@ -1,7 +1,7 @@
 extends Node
 
 const SAVE_DIR := "user://saves/"
-const MAX_SLOTS := 3  # Adjust as needed
+const MAX_SLOTS := 6  # Adjust as needed
 
 var save_data := {
 	"name": "Player",
@@ -9,6 +9,7 @@ var save_data := {
 	"lv": 1,
 	"exp": 0,
 	"position": Vector2(0, 0),
+	"room_dir": "root/intro_cutscene.tscn",
 	"flags": {},
 	"location": "Ruins",
 	"play_time": 0  # Seconds played
