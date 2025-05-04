@@ -16,6 +16,12 @@ layout_mode = 0
 offset_right = 512.0
 offset_bottom = 192.0
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 192.0
+color = Color(0.221302, 0.221302, 0.221302, 1)
+
 [node name="Slots" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 8.0

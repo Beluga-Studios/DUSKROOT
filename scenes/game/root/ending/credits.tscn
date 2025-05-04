@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7qw75860npcx"]
+
+[ext_resource type="Script" path="res://scenes/game/root/ending/credits.gd" id="1_4ybo6"]
+[ext_resource type="FontFile" uid="uid://ctv2epc0xm04n" path="res://assets/fonts/FiraCode-VF.ttf" id="1_gr7ml"]
+[ext_resource type="Shader" path="res://resources/shaders/soul4.gdshader" id="3_ahpbx"]
+
+[sub_resource type="Theme" id="Theme_2y76t"]
+default_font = ExtResource("1_gr7ml")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqjtl"]
+shader = ExtResource("3_ahpbx")
+shader_parameter/time_speed = 1.0
+shader_parameter/overlay_strength = 0.6
+shader_parameter/wave_strength = 0.02
+shader_parameter/flame_scale = Vector2(3, 1.5)
+shader_parameter/flow_direction = Vector2(0, 1)
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_2y76t")
+script = ExtResource("1_4ybo6")
+
+[node name="CreditsLabel" type="RichTextLabel" parent="."]
+material = SubResource("ShaderMaterial_rqjtl")
+layout_mode = 0
+offset_left = 24.0
+offset_top = 392.0
+offset_right = 648.0
+offset_bottom = 1292.0
+bbcode_enabled = true
+text = "=== CREDITS ===
+
+Game Title: [Your Game Title]
+Version: [v1.0]
+
+DEVELOPMENT TEAM
+----------------
+Game Design: [Name]
+Programming: [Name]
+Art & Animation: [Name]
+Music & Sound: [Name]
+Writing & Dialogue: [Name]
+
+SPECIAL THANKS
+--------------
+Playtesters: [Names or Usernames]
+Supporters: [Patreon Backers / Kickstarter / Friends]
+Tools Used: [Godot Engine, Aseprite, etc.]
+
+PUBLISHING
+----------
+Studio: [Beluga Studios or other name]
+Website: [yourwebsite.com]
+
+COPYRIGHT & LICENSE
+-------------------
+© [Year] [Your Name or Studio]. All rights reserved.
+Some assets may be licensed under their respective creators.
+
+\"Thanks for playing!\"
+"
+fit_content = true

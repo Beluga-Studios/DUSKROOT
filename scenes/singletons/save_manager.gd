@@ -5,7 +5,7 @@ const MAX_SLOTS := 6  # Adjust as needed
 
 var save_data := {
 	"name": "Player",
-	"hp": 20,
+	"hp": 100,
 	"lv": 1,
 	"exp": 0,
 	"position": Vector2(0, 0),

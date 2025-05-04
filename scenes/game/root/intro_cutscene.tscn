@@ -3,10 +3,13 @@
 [ext_resource type="Script" path="res://scenes/game/root/intro_cutscene.gd" id="1_0yuku"]
 [ext_resource type="FontFile" uid="uid://bohdqqppdb8ro" path="res://assets/fonts/dpcomic.ttf" id="2_23rv6"]
 
-[node name="IntroCutscene" type="Node2D"]
+[node name="IntroCutscene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_0yuku")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 color = Color(0, 0, 0, 1)
@@ -16,8 +19,9 @@ position = Vector2(0, 368)
 
 [node name="Label" type="Label" parent="Scroll"]
 offset_left = 8.0
+offset_top = -8.0
 offset_right = 632.0
-offset_bottom = 989.0
+offset_bottom = 981.0
 theme_override_fonts/font = ExtResource("2_23rv6")
 theme_override_font_sizes/font_size = 31
 text = "

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://ce5bq774m54ml"]
 
-[ext_resource type="FontFile" uid="uid://dt4t78t20m8em" path="res://Assets/Fonts/plumppixel.ttf" id="2_126bg"]
+[ext_resource type="FontFile" uid="uid://dt4t78t20m8em" path="res://assets/fonts/plumppixel.ttf" id="2_126bg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_upiqw"]
 texture_margin_left = 2.0

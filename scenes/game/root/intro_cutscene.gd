@@ -1,9 +1,7 @@
-extends Node2D
+extends Control
 
 var t = 0
 var text = ["
-
-
 
 
 
@@ -128,8 +126,6 @@ to stop the unraveling.","
 
 
 
-
-
 Long ago, the world remembered everything...
 
 
@@ -194,7 +190,7 @@ But something is waiting...
 
 
 
-…beneath the roots."]
+...beneath the roots."]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -203,12 +199,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	$Scroll.position.y -=1
+	$Scroll.position.y -=6
 	var amount_scrolled = abs($Scroll.position.y-360)
 	if $Scroll/Label.size.y+360 < amount_scrolled:
 		$Scroll.position.y = 368
 		t+=1
 		if t==4:
-			SceneTransition.fade_scene_to_file("res://scenes/game/root/taproot.tscn",3.0)
+			SceneTransition.fade_scene_to_file("res://scenes/game/root/taproot.tscn")
+			return
 		else:
 			$Scroll/Label.text=text[t]

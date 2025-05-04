@@ -10,7 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Duskroot"
+config/name="DUSKROOT"
+config/description="DUSKROOT is a narrative-driven exploration game where you delve into decaying memory dungeons to uncover your identity and stop the unraveling of reality."
+config/version="0.1"
 run/main_scene="res://scenes/menu/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
@@ -19,14 +21,18 @@ config/icon="res://icon.svg"
 
 SaveManager="*res://scenes/singletons/save_manager.gd"
 SceneTransition="*res://scenes/singletons/scene_transition.gd"
+RoomTransition="*res://scenes/singletons/room_transition.gd"
+PlayerManager="*res://scenes/singletons/player_manager.gd"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

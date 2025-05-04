@@ -3,7 +3,7 @@ extends Control
 @onready var slots_container := $Slots
 @onready var slot_template := $SlotTemplate
 
-var mode := "load"  # or "save"
+@export var mode := "load"  # or "save"
 
 func _ready():
 	$Label.text = mode + " game"
@@ -40,4 +40,4 @@ func on_slot_pressed(slot: int):
 		update_slots()  # Refresh UI
 	elif mode == "load":
 		SaveManager.load_game(slot)
-		get_tree().change_scene_to_file("res://scenes/game/%s" % SaveManager.save_data.room_dir)
+		SceneTransition.fade_scene_to_file("res://scenes/game/%s" % SaveManager.save_data.room_dir,0.2,10.0,Color.AZURE)
